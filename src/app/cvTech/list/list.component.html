@@ -1,0 +1,6 @@
+<ol *ngFor="let personne of personnes" class="list-group">
+  <app-item (selectFils)="processFils($event)"
+            [personne]="personne"
+  ></app-item>
+</ol>
+

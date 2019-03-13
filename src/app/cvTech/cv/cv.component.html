@@ -1,0 +1,9 @@
+<div style="padding: 20px" class="row">
+  <div class="col-md-6 col-sm-12">
+    <app-list (sendFils)="selectPersonne($event)"></app-list>
+  </div>
+  <div class="col-md-6 col-sm-12">
+    <app-detail [personne]="selectedPersonne"></app-detail>
+  </div>
+
+</div>
