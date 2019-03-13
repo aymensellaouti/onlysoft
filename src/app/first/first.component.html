@@ -1,5 +1,12 @@
-<div [style.backgroundColor]="color">
+<div [hidden]="show" [style.backgroundColor]="color">
   first works!
 </div>
 
+<button (click)="allumer()" class="btn btn-danger">Allumer/Eteindre</button>
+<button (click)="sendDataToPere()" class="btn btn-success">Send Data</button>
+
 <input #monInput (change)="changeColor(monInput.value)" type="text" class="form-control">
+
+<input type="text" [(ngModel)]="color" class="form-control">
+
+Le contenu de color est : {{color}}

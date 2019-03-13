@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'atef';
+  processData(data) {
+    this.title = data;
+  }
 }
