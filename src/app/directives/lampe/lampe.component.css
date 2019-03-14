@@ -1,0 +1,9 @@
+#lampe {
+  border: 1px black solid;
+  height: 150px;
+  width: 150px;
+}
+.eteindre {
+  background-color: black;
+  color: white;
+}

@@ -1,0 +1,32 @@
+{{number|number: '.4'}}
+
+<p [ngStyle]="{
+'color': couleur,
+'font-family': font,
+'font-size' : taille
+}">
+  lampe works!
+</p>
+<div class="row">
+  <div class="col-md-1">
+    Couleur : <input type="color" class="form-control" [(ngModel)]="couleur">
+  </div>
+  <div class="col-md-4">
+    <select #myFont class="form-control"
+            (change)="changerFont(myFont.value)"
+    >
+      <option *ngFor="let police of polices" value="{{police}}">{{police}}</option>
+
+    </select>
+  </div>
+  <div class="col-md-4">
+    <input type="number" #tailleInput class="form-control"
+           (change)="changeSize(tailleInput.value)">
+  </div>
+</div>
+
+<div (click)="isEteinte = ! isEteinte" id="lampe" [ngClass]="{'eteindre': isEteinte}">
+  Lampe
+</div>
+
+<input appRainbow type="text" class="form-control">

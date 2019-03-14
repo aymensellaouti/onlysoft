@@ -3,7 +3,6 @@
     <app-list (sendFils)="selectPersonne($event)"></app-list>
   </div>
   <div class="col-md-6 col-sm-12">
-    <app-detail [personne]="selectedPersonne"></app-detail>
+    <app-detail *ngIf="selectedPersonne"  [personne]="selectedPersonne"></app-detail>
   </div>
-
 </div>
