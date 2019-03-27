@@ -14,6 +14,7 @@ import { TestComponent } from './test/test.component';
 import { LampeComponent } from './directives/lampe/lampe.component';
 import { RainbowDirective } from './directives/rainbow.directive';
 import { DefaultImagePipe } from './default-image.pipe';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { DefaultImagePipe } from './default-image.pipe';
     TestComponent,
     LampeComponent,
     RainbowDirective,
-    DefaultImagePipe
+    DefaultImagePipe,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
